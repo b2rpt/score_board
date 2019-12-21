@@ -13,11 +13,13 @@ class Counters extends Component {
     ]
   };
 
+
   handleIncrement = counter => {
     const x = [...this.state.counters];
     const index = x.indexOf(counter);
     x[index] = { ...counter };
     x[index].value += 5;
+    x.sort((a,b) => b.value - a.value)
     this.setState({ counters: x });
   };
 
@@ -26,16 +28,17 @@ class Counters extends Component {
     const index = x.indexOf(counter);
     x[index] = { ...counter };
     x[index].value -= 5;
+    x.sort((a,b) => b.value - a.value)
     this.setState({ counters: x });
   };
 
   render() {
     return (
       <React.Fragment>
-        
-          <div className="header">
-            <h1>connections Quiz</h1>
-          </div>
+        <div className="header">
+          <h1>CONNECTIONS QUIZ PUNE</h1>
+        </div>
+        <div className="bcolor">
           {this.state.counters.map(counter => (
             <Counter
               key={counter.id}
@@ -43,11 +46,10 @@ class Counters extends Component {
               onIncrement={this.handleIncrement}
               onDecrement={this.handleDecrement}
             >
-              <h3> Team {counter.name}</h3>
-              
+              <h3> TEAM {counter.name}</h3>
             </Counter>
           ))}
-        
+        </div>
       </React.Fragment>
     );
   }

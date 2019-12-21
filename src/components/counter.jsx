@@ -7,34 +7,31 @@ class Counter extends Component {
         <div className="row">
           <div className="col-9">{this.props.children}</div>
           <div className="col">
-          <button
-            onClick={() => this.props.onDecrement(this.props.counter)}
-            className="btn btn-danger btn-sm m-4"
-          >
-            -
-          </button>
+            <span className={this.getBadgeClassess()}>
+              {this.formateCount()}
+            </span>
 
-          <span className={this.getBadgeClassess()}>
-            {" "}
-            {this.formateCount()}
-          </span>
+            <button
+              onClick={() => this.props.onDecrement(this.props.counter)}
+              className="btn btn-danger btn m-4"
+            >
+              -
+            </button>
 
-          <button
-            onClick={() => this.props.onIncrement(this.props.counter)}
-            className="btn btn-primary btn-sm m-4"
-          >
-            +
-          </button>
+            <button
+              onClick={() => this.props.onIncrement(this.props.counter)}
+              className="btn btn-primary btn m-"
+            >
+              +
+            </button>
           </div>
-
-         
         </div>
       </React.Fragment>
     );
   }
 
   getBadgeClassess() {
-    let classes = "badge m-2 badge-";
+    let classes = "badge badge m-4 badge-pill badge-";
     classes += this.props.counter.value === 0 ? "warning" : "success";
     return classes;
   }
