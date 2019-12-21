@@ -4,12 +4,12 @@ import Counter from "./counter";
 class Counters extends Component {
   state = {
     counters: [
-      { id: 1, value: 0, name: "1" },
-      { id: 2, value: 0, name: "2" },
-      { id: 3, value: 0, name: "3" },
-      { id: 4, value: 0, name: "4" },
-      { id: 5, value: 0, name: "5" },
-      { id: 6, value: 0, name: "6" }
+      { id: 1, value: 0, name: "ALFA" },
+      { id: 2, value: 0, name: "BRAVO" },
+      { id: 3, value: 0, name: "CHARLIE" },
+      { id: 4, value: 0, name: "DELTA" },
+      { id: 5, value: 0, name: "ECHO" },
+      { id: 6, value: 0, name: "FOXTROT" }
     ]
   };
 

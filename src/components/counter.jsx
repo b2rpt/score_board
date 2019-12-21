@@ -6,8 +6,9 @@ class Counter extends Component {
       <React.Fragment>
         <div className="row">
           <div className="col-9">{this.props.children}</div>
-          <div className="col">
-            <span className={this.getBadgeClassess()}>
+
+          <div className="col" >
+            <span className={this.getBadgeClassess()} >
               {this.formateCount()}
             </span>
 
@@ -31,7 +32,7 @@ class Counter extends Component {
   }
 
   getBadgeClassess() {
-    let classes = "badge badge m-4 badge-pill badge-";
+    let classes = "badge d-xl p-2 badge m-4 badge-pill badge-";
     classes += this.props.counter.value === 0 ? "warning" : "success";
     return classes;
   }
