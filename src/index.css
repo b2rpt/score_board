@@ -1,15 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -30,21 +29,31 @@ code {
   color: rgb(195, 8, 252);
 }
 
-.col-9{
+.col-9 {
   margin-left: 60px;
   margin-top: 20px;
   font-weight: 400;
   color: whitesmoke;
-  letter-spacing: .5px;
-  
-  
+  letter-spacing: 0.5px;
 }
 
-.row{
+.row {
   margin-top: 40px;
   background-color: rgba(20, 20, 17, 0.13);
 }
 
-.rpt{
+.rpt {
   background-color: rgb(29, 70, 70);
+}
+
+.badge-pill_1 {
+  padding-right: 1.6em !important;
+  padding-left: 1.6em !important;
+  border-radius: 1rem !important;
+  padding-bottom: 0.8rem !important;
+  padding-top: 0.4rem !important;
+}
+
+.score-font {
+  font-size: 25px;
 }
